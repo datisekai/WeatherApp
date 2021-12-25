@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự báo thời tiết</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="weather"
+        style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./assets/img/hot.gif) no-repeat center/cover;">
+        <div class="weather__content" style="background-image: url(./assets/img/hot.gif);">
+            <div class="weather__content-input">
+                <input type="text" name="" id="txtsearch" placeholder="Enter your city name ...">
+            </div>
+
+            <div class="weather__content-main">
+                <div class="address">
+                    <h2 id="address">Rach Gia, VN</h2>
+                </div>
+
+                <div class="time">
+                    <p id="time">12:22:22, 25/12/2021</p>
+                </div>
+
+                <div class="temperature">
+                    <h1><span id="temparature">30</span><sup>o</sup>C</h1>
+                </div>
+
+                <div class="description">
+                    <h2 id="desc">Clouds</h2>
+                </div>
+
+                <div class="change">
+                    <div class="visibility">
+                        <i class="far fa-eye"></i>
+                        <p><span id="visible">10000</span> (m)</p>
+                    </div>
+
+                    <div class="wind">
+                        <i class="fas fa-wind"></i>
+                        <p><span id="wind">4.04</span> (m/s)</p>
+                    </div>
+
+                    <div class="humidity">
+                        <i class="fas fa-cloud-sun"></i>
+                        <p><span id="humidity">21%</span> (%)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.weather {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather__content {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 350px;
+  height: 600px;
+  padding: 30px 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 0.1s;
+}
+
+.weather__content-input input {
+  width: 100%;
+  padding: 10px 16px;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 0.4s;
+}
+
+.weather__content-input input:focus{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #333;
+}
+
+.weather__content-main {
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.address {
+  margin-top: 20px;
+  overflow-x: hidden;
+}
+
+.address h2 {
+  color: whitesmoke;
+  font-size: 35px;
+  text-shadow: 2px 2px rgb(0 0 0 / 50%);
+  white-space: nowrap;
+  font-style: italic;
+}
+
+.time {
+  margin-top: 8px;
+}
+
+.time p {
+  color: whitesmoke;
+  font-size: 16px;
+  text-shadow: 2px 2px rgb(0 0 0 / 50%);
+}
+
+.temperature {
+  margin-top: 12px;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 2px 2px 0 2px rgb(0 0 0 / 50%);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.temperature h1 {
+  color: whitesmoke;
+  font-size: 50px;
+  text-shadow: 2px 2px rgb(0 0 0 / 50%);
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.description h2 {
+  color: whitesmoke;
+  font-size: 35px;
+  text-shadow: 2px 2px rgb(0 0 0 / 50%);
+  font-style: italic;
+}
+
+.change {
+  display: flex;
+  color: whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 0 2px rgb(0 0 0 / 50%);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.visibility i,
+.wind i,
+.humidity i {
+  font-size: 20px;
+}
+
+.visibility p,
+.wind p,
+.humidity p {
+  margin-top: 8px;
+  font-size: 14px;
+  text-shadow: 2px 2px rgb(0 0 0 / 50%);
+}
